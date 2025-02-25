@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { services } from "../constant/Services";
+import { services } from "../constant/services";
 
 export const Services = () => {
   return (
