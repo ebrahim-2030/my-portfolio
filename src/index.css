@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Bauhs93";
+  src: url("./assets/fonts/BAUHS93.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
