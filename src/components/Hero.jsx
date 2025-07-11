@@ -5,7 +5,7 @@ import PNG from "../assets/images/png.png";
 import React from "react";
 import { motion } from "framer-motion";
 const Hero = () => {
-  const fileUrl = "../../public/Ebrahim Asil CV.pdf";
+  const fileUrl = "/public/Ebrahim Asil CV.pdf";
 
   const handleDownload = () => {
     const link = document.createElement("a");

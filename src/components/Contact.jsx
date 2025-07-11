@@ -35,6 +35,7 @@ const Contact = () => {
         icon: <CheckCircle className="bg-brand" />,
       });
       event.target.reset();
+      setResult("");
     } else {
       console.log("Error", data);
       toast.error(data.message);

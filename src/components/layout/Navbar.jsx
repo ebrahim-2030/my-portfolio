@@ -1,7 +1,7 @@
 import Moon from "../../assets/icons/moon-stars-svgrepo-com (3).png";
 import Sun from "../../assets/icons/sunlight-svgrepo-com.png";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll"; // Import react-scroll
 import { useEffect, useState } from "react";
 
