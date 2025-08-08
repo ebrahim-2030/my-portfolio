@@ -63,7 +63,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              offset={-45}
+              offset={-100}
               spy={true}
               activeClass="text-brand font-bold"
               className="cursor-pointer py-1 px-3 rounded-full font-medium hover:text-brand"

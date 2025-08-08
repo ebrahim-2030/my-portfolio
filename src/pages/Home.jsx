@@ -22,7 +22,7 @@ const Home = () => {
           ease: "linear",
         }}
         viewport={{ once: true, amount: 0.1 }}
-        className="px-4 py-8 md:px-8 lg:px-24  xl:px-48 mt-12 bg-brand"
+        className="px-4 py-8 md:px-8 lg:px-24  xl:px-48 mt-28 bg-brand"
       >
         <About />
       </motion.section>

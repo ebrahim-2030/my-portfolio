@@ -55,8 +55,8 @@ const Contact = () => {
         }}
         viewport={{ once: true, amount: 0.1 }}
       >
-        <div className=" flex flex-col items-center bg-brand text-white pt-10 pb-5 px-5 md:rounded-b-[50px]  ">
-          <h2 className="text-2xl md:text-4xl font-bold">Let's Connect</h2>
+        <div className=" flex flex-col items-center bg-brand text-white pt-10 pb-5 px-5   ">
+          <h2 className="text-2xl md:text-4xl font-bold">Connect Me</h2>
           <p className="text-center text-xs mt-2 mb-6 text-white text-opacity-90 md:text-sm">
             Reach me directly on my social platforms, via email, or find me at
             my location

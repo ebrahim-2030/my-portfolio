@@ -14,7 +14,7 @@ const Hero = () => {
     link.click();
   };
   return (
-    <div className="min-h-[100vh]  lg:min-h-[100vh] pt-28 md:pt-0  flex flex-col  md:flex-row md:justify-between md:items-center ">
+    <div className=" pt-28 md:pt-36  flex flex-col  md:flex-row md:justify-between md:items-center ">
       <div className="md:w-1/2 ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

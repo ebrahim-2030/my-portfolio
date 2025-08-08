@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import { li } from "framer-motion/m";
 const Projects = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
 
@@ -52,7 +53,7 @@ const Projects = () => {
         slidesPerView={1}
         onMouseEnter={(Swiper) => Swiper.Autoplay.stop()}
         onMouseLeave={(Swiper) => Swiper.Autoplay.start()}
-        className=" duration-200 transition-all cursor-pointer rounded"
+        className=" duration-200 transition-all  rounded"
         style={{
           boxShadow:
             "0 10px 20px rgba(0, 0, 0, 0.1), 0 -6px 6px rgba(0, 0, 0, 0.01)",
@@ -84,19 +85,15 @@ const Projects = () => {
                       Key Features:
                     </h3>
 
-                    <ol className=" list-decimal ml-5 text-[12px] leading-6">
-                      <li className=" font-medium text-[#666] dark:text-white">
-                        User Authentication
-                      </li>
-                      <li className=" font-medium text-[#666] dark:text-white">
-                        Property Listings
-                      </li>
-                      <li className=" font-medium text-[#666] dark:text-white">
-                        Search and Filters
-                      </li>
-                      <li className=" font-medium text-[#666] dark:text-white">
-                        Admin Panel
-                      </li>
+                    <ol className="list-decimal ml-5 text-[12px] leading-6">
+                      {project.features.map((feature, index) => (
+                        <li
+                          key={index}
+                          className=" font-medium text-[#666] dark:text-white"
+                        >
+                          {feature}
+                        </li>
+                      ))}
                     </ol>
                   </div>
                   <div className="">
@@ -122,7 +119,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="xl:w-2/4 md:w-2/3   p-4 md:pr-8 md:py-6">
-                <div className="h-[200px] md:h-[220px] w-full lg:h-[250px] xl:h-[350px]">
+                <div className="h-[200px] md:h-[220px] w-full lg:h-[250px] xl:h-[350px] border border-zinc-100 rounded">
                   <img
                     src={project.image}
                     className="h-full w-full rounded"
@@ -132,6 +129,7 @@ const Projects = () => {
                 <div className="mt-4 flex justify-between items-center text-[#555] dark:text-white">
                   <a
                     href={project.sourceCode}
+                    target="_blank"
                     className="text-sm font-medium cursor-pointer flex items-center"
                   >
                     <span className=" xl:block">Source Code</span>
@@ -144,6 +142,7 @@ const Projects = () => {
                   <span className="block h-6 w-[1px] bg-[#444]"></span>
                   <a
                     href={project.liveDemo}
+                    target="_blank"
                     className="text-sm font-medium cursor-pointer flex items-center"
                   >
                     <span className=" xl:block">Live Demo</span>
